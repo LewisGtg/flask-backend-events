@@ -4,10 +4,11 @@ event_route_bp = Blueprint("event_route", __name__)
 
 from src.http_types.http_response import HttpResponse
 from src.http_types.http_request import HttpRequest
+from src.validators.eventos_creator_validator import eventos_creator_validator
 
 @event_route_bp.route("/event", methods=["POST"])
 def create_new_event():
-
+    eventos_creator_validator(request)
     http_request = HttpRequest(body=request.json)
     print(http_request.body)
     http_response = HttpResponse(body={ "estou": "aqui" }, status_code=201)
