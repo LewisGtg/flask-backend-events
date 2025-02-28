@@ -1,7 +1,7 @@
-# Flask Backend Events
+# Events Manager
 
 This project is a Flask-based backend for managing events and their participants.
-This project was created in the Next Level Week (NLW) from Rocketseat
+This project was created in the Next Level Week (NLW) from Rocketseat.
 
 ## Project Structure
 
@@ -65,5 +65,3 @@ This project was created in the Next Level Week (NLW) from Rocketseat
 
 - The application will be available at `http://0.0.0.0:3000`.
 - Use a tool like Postman to interact with the API endpoints.
-
-## License
